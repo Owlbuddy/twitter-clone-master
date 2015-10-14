@@ -4,12 +4,12 @@ $(document).ready(function () {
         $("#tweet-controls").css("display", "inline-block");
 
     });
-    $("#tweet-content textarea").on('keyup', function () {
+    $('#tweet-content textarea').on('keyup', function () {
         $('#char-count').html('140' - $('#tweet-content textarea').val().length);
         
-        if ($('tweet-content textarea').val().length >= 140) {
-            $('#tweet-control .button').prop('disabled', true);
-            
+        if ($('#tweet-content textarea').val().length >= 140) {
+            $('#tweet-controls .button').prop('disabled', true);
+                        
         } else {
             $('#tweet-controls .button').prop('disabled', false);
         }
