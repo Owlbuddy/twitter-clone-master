@@ -21,4 +21,14 @@ $(document).ready(function () {
             $('#char-count').css('color', 'black');
         };
     });
+    
+    $(".tweet").mouseenter(function() {
+        $('.tweet-actions li').css("display", "inline-block");
+    });
+     $(".tweet").mouseleave(function() {
+        $('.tweet-actions li').css("display", "none");
+    });
+     $(".tweet").click(function() {
+        $('.stats').css("display", "inline-block");
+    });
 });
