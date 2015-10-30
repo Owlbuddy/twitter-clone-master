@@ -31,4 +31,5 @@ $(document).ready(function () {
      $(".tweet").click(function() {
         $('.stats').css("display", "inline-block");
     });
+
 });
