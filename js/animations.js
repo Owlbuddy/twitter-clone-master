@@ -32,4 +32,7 @@ $(document).ready(function () {
         $('.stats').css("display", "inline-block");
     });
 
+  $("time").timeago(new Date());
+    jQuery.timeago("2013-09-19");
+
 });
